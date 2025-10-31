@@ -637,12 +637,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 845248942}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0, y: 0, z: 0.113}
-  m_LocalScale: {x: 0.13, y: 0.13, z: 0.13}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 5.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 1618948319}
+  m_Father: {fileID: 1369379509}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!95 &845248944
 Animator:
@@ -654,7 +654,7 @@ Animator:
   m_GameObject: {fileID: 845248942}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 09b2f1d59276c494b97542febd4eb3df, type: 2}
+  m_Controller: {fileID: 9100000, guid: 5ece3ccf7053b7f42b289cb453437b88, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -755,6 +755,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1618948319}
+  - {fileID: 845248943}
   m_Father: {fileID: 330585546}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1369379510
@@ -846,6 +847,8 @@ MonoBehaviour:
   muzzlePoint: {fileID: 1618948319}
   shootRange: 100
   shootforce: 30
+  muzzleFlashanimator: {fileID: 845248942}
+  flashduration: 0.33
 --- !u!1 &1618948318
 GameObject:
   m_ObjectHideFlags: 0
@@ -875,8 +878,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0.502}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 845248943}
+  m_Children: []
   m_Father: {fileID: 1369379509}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1618948321
